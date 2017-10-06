@@ -1,0 +1,16 @@
+{
+  "name": "react-oa",
+  "version": "1.0.0",
+  "description": "Observable base animation with react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "observable",
+    "animation",
+    "react"
+  ],
+  "author": "Jerry-Hong",
+  "license": "ISC"
+}
