@@ -1,5 +1,7 @@
 # react-oa
 
+<img src="https://github.com/Jerry-Hong/react-oa/blob/master/assets/logo.png?raw=true" width="300">
+
 An Observable base Animation Library with React
 
 ## Usage
