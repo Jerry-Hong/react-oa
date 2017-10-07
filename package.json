@@ -1,6 +1,6 @@
 {
   "name": "react-oa",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Observable base animation with react",
   "main": "./bundle/bundle.js",
   "scripts": {
