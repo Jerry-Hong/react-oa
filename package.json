@@ -1,8 +1,8 @@
 {
   "name": "react-oa",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Observable base animation with react",
-  "main": "./bundle/bundle.js",
+  "main": "./dist/bundle.js",
   "scripts": {
     "build": "rollup --config rollup.config.js"
   },
@@ -27,7 +27,8 @@
     "babel-preset-stage-1": "^6.24.1",
     "rollup": "^0.50.0",
     "rollup-plugin-babel": "^3.0.2",
-    "rollup-plugin-node-resolve": "^3.0.0"
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-sourcemaps": "^0.4.2"
   },
   "dependencies": {
     "is-equal-shallow": "^0.1.3",
