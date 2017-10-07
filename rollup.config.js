@@ -8,6 +8,7 @@ export default {
   output: {
     file: 'dist/bundle.js',
     format: 'iife',
+    name: 'ReactOA',
   },
   sourcemap: true,
   plugins: [
