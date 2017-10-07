@@ -2,7 +2,7 @@
   "name": "react-oa",
   "version": "0.0.1",
   "description": "Observable base animation with react",
-  "main": "index.js",
+  "main": "./bundle/bundle.js",
   "scripts": {
     "build": "rollup --config rollup.config.js"
   },
