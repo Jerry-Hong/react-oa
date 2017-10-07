@@ -1,16 +1,12 @@
 {
   "name": "react-oa",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Observable base animation with react",
   "main": "./dist/bundle.js",
   "scripts": {
     "build": "rollup --config rollup.config.js"
   },
-  "keywords": [
-    "observable",
-    "animation",
-    "react"
-  ],
+  "keywords": ["observable", "animation", "react"],
   "homepage": "https://github.com/Jerry-Hong/react-oa",
   "repository": {
     "type": "git",
