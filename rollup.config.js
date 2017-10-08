@@ -7,7 +7,7 @@ export default {
   input: 'src/index.js',
   output: {
     file: 'dist/bundle.js',
-    format: 'iife',
+    format: 'es',
     name: 'ReactOA',
   },
   sourcemap: true,
@@ -20,6 +20,15 @@ export default {
     commonjs(),
     sourcemaps(),
     babel({
+      presets: [
+        [
+          'es2015',
+          {
+            modules: false,
+          },
+        ],
+      ],
+      plugins: ['external-helpers'],
       exclude: 'node_modules/**', // only transpile our source code
     }),
   ],
