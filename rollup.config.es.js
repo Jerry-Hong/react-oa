@@ -6,8 +6,8 @@ import commonjs from 'rollup-plugin-commonjs';
 export default {
   input: 'src/index.js',
   output: {
-    file: 'dist/bundle.umd.js',
-    format: 'umd',
+    file: 'dist/bundle.es.js',
+    format: 'es',
     name: 'ReactOA',
   },
   sourcemap: true,
