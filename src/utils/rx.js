@@ -1,11 +1,8 @@
 import { Observable, ReplaySubject, Scheduler } from 'rxjs';
 
-export { ReplaySubject };
-export { Scheduler };
-export default Observable;
-export const takeWhileInclusive = predicate => source =>
-  new Observable(observer => {
-    const subscription = source.subscribe({
+function takeWhileInclusive(predicate) {
+  return new Observable(observer => {
+    const subscription = this.subscribe({
       next: value => {
         observer.next(value);
 
@@ -17,5 +14,12 @@ export const takeWhileInclusive = predicate => source =>
       complete: () => observer.complete(),
     });
 
-    return () => subscription.unsubscribe();
+    return subscription;
   });
+}
+
+Observable.prototype.takeWhileInclusive = takeWhileInclusive;
+
+export { ReplaySubject };
+export { Scheduler };
+export default Observable;
