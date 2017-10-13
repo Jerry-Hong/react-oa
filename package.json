@@ -6,10 +6,14 @@
   "module": "./dist/bundle.es.js",
   "scripts": {
     "clean": "rimraf ./dist",
-    "build":
-      "npm run clean && rollup --config rollup.config.js && rollup --config rollup.config.es.js"
+    "build": "npm run clean && rollup --config rollup.config.js && rollup --config rollup.config.es.js",
+    "dev": "rollup --config rollup.config.es.js -w"
   },
-  "keywords": ["observable", "animation", "react"],
+  "keywords": [
+    "observable",
+    "animation",
+    "react"
+  ],
   "homepage": "https://github.com/Jerry-Hong/react-oa",
   "repository": {
     "type": "git",
