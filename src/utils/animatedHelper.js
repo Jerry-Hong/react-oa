@@ -1,17 +1,13 @@
-import Observable, { Scheduler, takeWhileInclusive } from './rx.js';
+import Observable from './rx.js';
+import { createAnimationFrameTicker } from './animationObservable';
 
 const animationFrame = Scheduler.animationFrame;
 
 export const duration = ms =>
-  Observable.defer(() => {
-    const subAt = animationFrame.now();
-    return Observable.interval(0, animationFrame).map(
-      () => animationFrame.now() - subAt
-    );
-  })
+  createAnimationFrameTicker()
     .map(time => time / ms)
-    .let(takeWhileInclusive(p => p <= 1))
-    .map(p => (p > 1 ? 1 : p));
+    .takeWhileInclusive(p => p <= 1)
+    .map(p => (p <= 1 ? p : 1));
 
 export const distance = px => p => p * px;
 
