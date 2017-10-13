@@ -32,5 +32,5 @@ export default {
       exclude: 'node_modules/**', // only transpile our source code
     }),
   ],
-  external: ['rxjs', 'react', 'react-dom', 'is-equal-shallow'],
+  external: ['rxjs', 'react', 'react-dom', 'performance-now'],
 };
